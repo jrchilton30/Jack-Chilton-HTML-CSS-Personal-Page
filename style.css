@@ -1,0 +1,272 @@
+
+body{
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+}
+
+/* Nav Section */
+
+.navbar-brand i:hover{
+  color: #F6AE2D !important;
+}
+
+.nav-link:hover{
+  color: #F6AE2D !important;
+}
+
+#nav-color{
+  color: #575D90;
+  border-color: #575D90;
+}
+
+.nav-link{
+  color: #575D90 !important;
+}
+
+/* SIZZLE (To make scrollspy custom color) */
+.nav-link.active{
+  color: #F6AE2D !important;
+}
+
+.navbar-toggler .navbar-toggler-icon{
+  /* To make hamburger menu colored */
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(87, 93, 144, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* SIZZLE Scrollspy targets*/
+#mission-section-target,
+#skills-section-target,
+#inspiration-section-target,
+#contact-section-target {
+  position: relative;
+  top: -75px;
+}
+
+/* Hero Section */
+
+#hero-section{
+  position: relative;
+  background: 
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("img/canyon_background.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 75vh;
+  width: 100%;
+  padding: 10vh 0 5vh;
+  pointer-events: none;
+}
+
+/* SIZZLE Change background when profile pic hovered over*/
+#hero-section:hover{
+  background: 
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("img/canyon_open.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-position: center;
+}
+
+.profile-pic{
+  position: relative;
+  display: block;
+  height: 25vh;
+  width: 25vh;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: 15vh auto 0;
+  border: 12px solid rgba(0, 0, 0, 0.3);  
+  transition-duration: .3s;
+  pointer-events: auto;
+}
+
+/* SIZZLE Profile pic hover transition*/
+.profile-pic:hover{
+  transform: scale(1.4);
+  background-color: #F26419;
+}
+
+.hero-name{
+  margin: 5vh;
+  text-align: center;
+  color: #F26419;
+}
+
+.hero-description{
+  text-align: center;
+  color: #F26419;
+  font-size: 24px;
+}
+
+/* Inspiration Section */
+
+#inspiration-section{
+  background-color: #F6AE2D;
+  padding: 7vh 0;
+}
+
+.header{
+  margin: 0 auto 5vh;
+  text-align: center;
+}
+
+#inspiration-header{
+  color: #575D90;
+}
+
+.carousel-item img{
+  object-fit: cover;
+  object-position: center;
+  height: 55vh;
+  overflow: hidden;
+}
+
+#kobe_pic{
+  object-position: 50% 35%;
+}
+
+#giannis_pic{
+  object-position: 50% 10%;
+}
+
+#ali_pic{
+  object-position: 50% 25%;
+}
+
+.carousel-item:after {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.3);
+}
+
+.carousel-caption{
+  z-index: 100;
+}
+
+.carousel-caption h5{
+  font-size: 3vw;
+}
+
+.carousel-caption p{
+  font-size: 2.5vw;
+}
+
+.carousel, .slide{
+  min-width: 60vw;
+  margin: 0 auto 5vh;
+}
+
+/* Mission Section */
+
+#mission-section{
+  padding: 7vh 0;
+  background-color: #F6AE2D;
+}
+
+#mission-header{
+  color: #575D90;
+}
+
+#a-mountain-pic{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#mission-description-container{
+  height: 300px;
+  line-height: 300px;
+}
+
+#mission-description{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  color: #575D90;
+  font-size: 20px;
+}
+
+/* Skills Section */
+
+#skills-section{
+  padding: 7vh 0;
+  background-color: #575D90;
+  color: #F26419;
+}
+
+#skills-header{
+  margin-bottom: 2vh;
+  color: #F26419;
+}
+
+#skill{
+  text-align: center;
+  font-size: 20px;
+}
+
+.skill_logo{
+  object-fit: cover;
+  object-position: center;
+  height: 150px;
+  margin: 5%;
+  display: inline-block;
+  opacity: .85;
+}
+
+/* Contact Section */
+
+#contact-section{
+padding: 7vh 0 3vh;
+background-color: #575D90;
+}
+
+#contact-header{
+  color:#F26419;
+  margin-bottom: 2vh;
+}
+
+#contact{
+  text-align: center;
+  margin-bottom: 4vh;
+  transition-duration: .5s;
+}
+
+/* SIZZLE Larger logos when hovered*/
+#contact:hover{
+  transform: scale(1.4);
+}
+
+#contact-logo{
+  font-size: 10vw;
+  color: #F26419;
+  transition-duration: .5s;
+}
+
+#contact-logo:hover{
+  color: #f6ae2d;
+}
+
+/* Footer Section */
+
+#footer-section{
+  text-align: center;
+  background-color: #F6AE2D;
+  padding: 20px 0;
+}
+
+#footer{
+  vertical-align: middle;
+  color: #575D90;
+  line-height: 20px;
+  margin: 0;
+}
