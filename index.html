@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <title>Jack's Profile</title>  
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald&family=Shizuru&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <!-- SIZZLE (scrollspy)-->
+  <body class="scroll-top"
+        data-bs-spy="scroll"
+        data-bs-target=".navbar"
+        data-bs-offset="75">
+
+    <!-- Navbar -->  
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #F26419;"> 
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <i class="bi bi-house" id="nav-color"></i>
+        </a>
+
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-collapse"
+                id="nav-color">
+          <span class="navbar-toggler-icon" id="nav-color"></span>
+        </button>
+
+        <div id="nav-collapse" class="collapse navbar-collapse">
+          <div class="navbar-nav ms-auto">
+            <a href="#mission-section-target" class="nav-link" id="nav-color">Mission</a>
+            <a href="#skills-section-target" class="nav-link" id="nav-color">Skills</a>
+            <a href="#inspiration-section-target" class="nav-link" id="nav-color">Inspiration</a>
+            <a href="#contact-section-target" class="nav-link" id="nav-color">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="hero-section">
+      <img class="profile-pic" src="img/nature_headshot.PNG" alt="A picture of me">
+      <h1 class="hero-name display-5">Jack Chilton</h1>
+      <p class="hero-description"><em>ASU and Coding Student</em></p>
+    </section>
+    
+    <!-- Mission/Meet-me section -->
+    <section id="mission-section">
+      <div id="mission-section-target"></div>
+      <div class="container-fluid container-lg">
+        <h2 class="header" id="mission-header">My Mission</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img id="a-mountain-pic" src="img/A_mountain_background.jpg" alt="A sunset from A-Mountain">
+          </div>
+          <div class="col-md-6" id="mission-description-container">
+            <span id="mission-description">My mission is to learn as much as I can from this class and use 
+              my newfound coding skills to contribute to my career interests. I will continue improve my current 
+              coding skills and learn new programming languages to enhance my career prospects.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills-section">
+      <div id="skills-section-target"></div>
+      <div class="container">
+        <h2 class="header" id="skills-header">Skills</h2>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3" id="skill">
+            <img class="skill_logo" src="img/html_logo.png" alt="A logo for HTML">
+            <p>Structuring content of webpages with proper semantic organization using HTML.</p>       
+          </div>
+          <div class="col-12 col-md-6 col-lg-3" id="skill">
+            <img class="skill_logo" src="img/css_logo.png" alt="A logo for CSS">
+            <p>Designing and styling modern-looking, responsive webpages using CSS. </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3" id="skill">
+            <img class="skill_logo" src="img/Bootstrap_logo.png" alt="A logo for Bootstrap">
+            <p>Concisely interacting with the most popular frontend framework to create professional webpages with Bootstrap.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3" id="skill">
+            <img class="skill_logo" src="img/javascript_logo.png" alt="A logo for JavaScript">
+            <p>Developing dynamic, functional webpages to provide users an interactive experience using JavaScript.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inspiration Section -->
+    <section id="inspiration-section">
+      <div id="inspiration-section-target"></div>
+      <div class="container-fluid g-0 container-lg">
+        <h2 class="header" id="inspiration-header">Inspiration</h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img id="kobe_pic" src="img/Kobe_photo.jpg" class="d-block w-100" alt="A picture of Kobe Bryant">
+              <div class="carousel-caption d-md-block">
+                <h5>If you're afraid to fail, then you're probably going to fail.</h5>
+                <p>Kobe Bryant</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="giannis_pic" src="img/Giannis_photo.jpg" class="d-block w-100" alt="A picture of Giannis Antetokounmpo">
+              <div class="carousel-caption d-md-block">
+                <h5>Sometimes in life, people aren't going to be around you to motivate you... You got to do it on your own.</h5>
+                <p>Giannis Antetokounmpo</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="ali_pic" src="img/Ali_photo.jpg" class="d-block w-100" alt="A picture of Muhammad Ali">
+              <div class="carousel-caption d-md-block">
+                <h5>A man who views the world the same at fifty as he did at twenty has wasted thirty years of his life.</h5>
+                <p>Muhammad Ali</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section">
+      <div id="contact-section-target"></div>
+      <div class="container">
+        <h2 class="header" id="contact-header">Contact</h2>
+        <div class="row">
+          <div class="col-12 col-md-4" id="contact">
+            <a href="https://www.linkedin.com/in/jack-r-chilton/"><i class="bi bi-linkedin" id="contact-logo"></i></a>
+          </div>
+          <div class="col-12 col-md-4" id="contact">
+            <a href="https://github.com/jrchilton30"><i class="bi bi-github" id="contact-logo"></i></a>
+          </div>
+          <div class="col-12 col-md-4" id="contact">
+            <a href="mailto: https://www.jrchilton30@gmail.com"><i class="bi bi-envelope" id="contact-logo"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <section id="footer-section">
+      <h4 id="footer">&copy; Jack Chilton 2023</h4>
+    </section>
+    
+    <!-- Bootstrap Javascript script tag -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
