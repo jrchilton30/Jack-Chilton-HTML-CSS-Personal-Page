@@ -46,9 +46,9 @@ body{
 
 #hero-section{
   position: relative;
-  background-image: url("https://user-images.githubusercontent.com/100240240/234476534-eae5b4fc-bb85-4537-b0c5-4e7ad822bd38.jpeg");
   background: 
-    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("https://user-images.githubusercontent.com/100240240/234476534-eae5b4fc-bb85-4537-b0c5-4e7ad822bd38.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
