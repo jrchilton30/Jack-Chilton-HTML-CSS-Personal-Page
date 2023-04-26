@@ -48,7 +48,7 @@ body{
   position: relative;
   background: 
     linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-    url("img/canyon_background.jpeg");
+    url("https://user-images.githubusercontent.com/100240240/234476534-eae5b4fc-bb85-4537-b0c5-4e7ad822bd38.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@ body{
 #hero-section:hover{
   background: 
     linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-    url("img/canyon_open.jpg");
+    url("https://user-images.githubusercontent.com/100240240/234476537-9e37713a-8d82-4f02-ac2f-369008e57117.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
